@@ -190,6 +190,10 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Temperaturverläufe}
+\begin{align}
+	T[\si{\celsius}]&=0.219+20.456 \cdot U - 0.302\cdot U^2+0.009\cdot U^3 \\
+	\sigma_T&=20.456 - 0.604\cdot U+0.027\cdot U^2
+\end{align}
 \begin{figure}[!htb]
 	\centering
 	\input{Raumtemp.tex}
@@ -205,6 +209,10 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \end{figure}
 
 \subsection{Widerstand}
+\begin{align}
+	R&=\frac{U}{I}\\
+	\sigma_R&=\frac{\sigma_U}{I}
+\end{align}
 \begin{figure}[!htb]
 	\centering
 	\input{Widerstand_Raum.tex}
@@ -220,6 +228,10 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \end{figure}
 
 \subsection{Leistung}
+\begin{align}
+	P&=UI\\
+	\sigma_P&=I\cdot\sigma_U
+\end{align}
 \begin{figure}[!htb]
 	\centering
 	\input{Leistung_Raum.tex}
@@ -235,6 +247,17 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \end{figure}
 
 \subsection{molare Wärmekapazität}
+\begin{align}
+	C=\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
+\end{align}
+Für das Erwärmen wird ein linearer Zusammenhang zwischen Temperatur und Zeit erwartet: $T(t)=a\cdot t +b$.
+Dann ist $\frac{\dif T}{\dif t}|_\text{erw}=a$.
+Für das Abkühlen kann man einen exponentiellen Abfall der Temperatur mit der Zeit annehmen: $T(t)=c\cdot e^{-\lambda t}$.
+Somit ist $\frac{\dif T}{\dif t}|_\text{abk}=-\lambda\cdot T$.
+\begin{align}
+	c_m&=\frac{M}{m}\frac{P}{a+\lambda T}\\
+	\sigma{c_m}&=\frac{M}{m}\sqrt{\frac{\sigma_P^2}{(a+\lambda T)^2}+\frac{P^2}{(a+\lambda T)^4}\cdot (\sigma_a^2+T^2 \sigma_\lambda^2+\lambda^2\sigma_T^2)}
+\end{align}
 
 \begin{table}[!htb]
 	\centering

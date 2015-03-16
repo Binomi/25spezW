@@ -350,3 +350,111 @@ correlation matrix of the fit parameters:
                o      p      
 o               1.000 
 p              -0.816  1.000 
+
+
+*******************************************************************************
+Mon Mar 16 11:54:09 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
+        format = x:z:s
+
+
+*******************************************************************************
+Mon Mar 16 11:54:39 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
+        format = x:z:s
+
+
+*******************************************************************************
+Mon Mar 16 11:57:00 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5)
+        format = x:z
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: E(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 6.75875e+12       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 254.117
+
+initial set of free parameter values
+
+e               = 1
+f               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 593731
+rel. change during last iteration : -3.27509e-06
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 181.618
+variance of residuals (reduced chisquare) = WSSR/ndf   : 32985
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+e               = -11.5568         +/- 0.2348       (2.031%)
+f               = 585276           +/- 84.37        (0.01441%)
+
+
+correlation matrix of the fit parameters:
+
+               e      f      
+e               1.000 
+f              -0.877  1.000 
+
+
+*******************************************************************************
+Mon Mar 16 11:57:43 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5)
+        format = x:z
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: E(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 5.68909e+11       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 254.117
+
+initial set of free parameter values
+
+e               = -11.5568
+f               = 585276
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 5.1624e+06
+rel. change during last iteration : -2.55991e-08
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 535.537
+variance of residuals (reduced chisquare) = WSSR/ndf   : 286800
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+e               = -61.8883         +/- 0.6922       (1.119%)
+f               = 432699           +/- 248.8        (0.05749%)
+
+
+correlation matrix of the fit parameters:
+
+               e      f      
+e               1.000 
+f              -0.877  1.000 
