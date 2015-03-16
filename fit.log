@@ -1,10 +1,10 @@
 
 
 *******************************************************************************
-Fri Mar 13 23:58:44 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'heizenAl.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'heizenAl.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 7
 function used for fitting: A(x)
@@ -12,22 +12,22 @@ function used for fitting: A(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   a             b            
-   0 1.2401182840e+05  0.00e+00 3.87e+00  1.000000e+00  1.000000e+00
-   4 3.7556560958e+00 -3.72e-05 3.87e-04  1.817270e+01  2.236047e+01
+   0 5.0198251547e+12  0.00e+00 5.50e+02  3.028784e-01  2.955105e+02
+   5 3.7556560958e+06 -5.28e-09 5.50e-03  3.028784e+02  2.955105e+05
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 3.75566
-rel. change during last iteration : -3.72298e-010
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.75566e+006
+rel. change during last iteration : -5.28195e-014
 
 degrees of freedom    (FIT_NDF)                        : 5
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
-p-value of the Chisq distribution (FIT_P)              : 0.585104
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 866.678
+variance of residuals (reduced chisquare) = WSSR/ndf   : 751131
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-a               = 18.1727          +/- 0.1254       (0.6903%)
-b               = 22.3605          +/- 0.2309       (1.033%)
+a               = 302.878          +/- 2.091        (0.6903%)
+b               = 295510           +/- 230.9        (0.07814%)
 
 correlation matrix of the fit parameters:
                 a      b      
@@ -36,10 +36,10 @@ b              -0.840  1.000
 
 
 *******************************************************************************
-Fri Mar 13 23:58:44 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'heizenBe.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'heizenBe.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 11
 function used for fitting: C(x)
@@ -47,22 +47,22 @@ function used for fitting: C(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   c             d            
-   0 1.6434684716e+05  0.00e+00 5.86e+00  1.000000e+00  1.000000e+00
-   4 7.3997037229e+00 -2.16e-04 5.86e-04  1.130793e+01  1.847285e+01
+   0 7.6907570180e+12  0.00e+00 5.41e+02  1.884656e-01  2.916229e+02
+   5 7.3997037229e+06 -7.04e-09 5.41e-02  1.884656e+02  2.916229e+05
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 7.3997
-rel. change during last iteration : -2.16487e-009
+After 5 iterations the fit converged.
+final sum of squares of residuals : 7.3997e+006
+rel. change during last iteration : -7.03554e-014
 
 degrees of freedom    (FIT_NDF)                        : 9
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
-p-value of the Chisq distribution (FIT_P)              : 0.595579
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 906.747
+variance of residuals (reduced chisquare) = WSSR/ndf   : 822189
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-c               = 11.3079          +/- 0.06646      (0.5877%)
-d               = 18.4729          +/- 0.2006       (1.086%)
+c               = 188.466          +/- 1.108        (0.5877%)
+d               = 291623           +/- 200.6        (0.06879%)
 
 correlation matrix of the fit parameters:
                 c      d      
@@ -71,10 +71,10 @@ d              -0.852  1.000
 
 
 *******************************************************************************
-Fri Mar 13 23:58:44 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'kuehlenAl.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'kuehlenAl.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 20
 function used for fitting: E(x)
@@ -82,34 +82,34 @@ function used for fitting: E(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   e             f            
-   0 6.0836549115e+06  0.00e+00 6.52e+02  1.000000e+00  1.000000e+00
-   4 1.4471032247e+01 -3.80e-01 6.52e-02 -3.749223e-02  4.328811e+00
+   0 2.6529205020e+04  0.00e+00 3.70e+03 -1.160715e-04  5.852927e+00
+   3 6.4975678143e+03 -1.05e-04 3.70e+00 -1.160770e-04  5.817500e+00
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 14.471
-rel. change during last iteration : -3.80495e-006
+After 3 iterations the fit converged.
+final sum of squares of residuals : 6497.57
+rel. change during last iteration : -1.05133e-009
 
 degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.89663
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803946
-p-value of the Chisq distribution (FIT_P)              : 0.69791
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 18.9994
+variance of residuals (reduced chisquare) = WSSR/ndf   : 360.976
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-e               = -0.0374922       +/- 0.0004188    (1.117%)
-f               = 4.32881          +/- 0.002262     (0.05225%)
+e               = -0.000116077     +/- 2.746        (2.366e+006%)
+f               = 5.8175           +/- 0.009636     (0.1656%)
 
 correlation matrix of the fit parameters:
                 e      f      
 e               1.000 
-f              -0.849  1.000 
+f              -0.870  1.000 
 
 
 *******************************************************************************
-Fri Mar 13 23:58:44 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'kuehlenBe.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'kuehlenBe.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 21
 function used for fitting: G(x)
@@ -117,34 +117,34 @@ function used for fitting: G(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   g             h            
-   0 8.0706830072e+06  0.00e+00 7.26e+02  1.000000e+00  1.000000e+00
-   4 9.5574905312e+00 -4.72e-01 7.26e-02 -2.274662e-02  4.342827e+00
+   0 1.2150386696e+04  0.00e+00 3.79e+03 -7.609008e-05  5.857448e+00
+   3 3.3916877853e+03 -5.45e-05 3.79e+00 -7.609188e-05  5.835158e+00
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 9.55749
-rel. change during last iteration : -4.72334e-006
+After 3 iterations the fit converged.
+final sum of squares of residuals : 3391.69
+rel. change during last iteration : -5.44978e-010
 
 degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.709243
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.503026
-p-value of the Chisq distribution (FIT_P)              : 0.963031
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 13.3608
+variance of residuals (reduced chisquare) = WSSR/ndf   : 178.51
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-g               = -0.0227466       +/- 0.0002774    (1.22%)
-h               = 4.34283          +/- 0.001515     (0.03488%)
+g               = -7.60919e-005    +/- 1.75         (2.3e+006%)
+h               = 5.83516          +/- 0.006035     (0.1034%)
 
 correlation matrix of the fit parameters:
                 g      h      
 g               1.000 
-h              -0.833  1.000 
+h              -0.850  1.000 
 
 
 *******************************************************************************
-Fri Mar 13 23:58:44 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'StickstoffAlHeizen.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'StickstoffAlHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 31
 function used for fitting: I(x)
@@ -152,22 +152,22 @@ function used for fitting: I(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   i             j            
-   0 2.2966620238e+06  0.00e+00 1.29e+01  1.000000e+00  1.000000e+00
-   5 1.3071953672e+01 -1.54e-09 1.29e-04  4.490758e+00 -1.595334e+02
+   0 2.8521107387e+12  0.00e+00 1.73e+02  7.484597e-02  1.136166e+02
+   4 1.3071953672e+07 -3.77e-06 1.73e-02  7.484597e+01  1.136166e+05
 
-After 5 iterations the fit converged.
-final sum of squares of residuals : 13.072
-rel. change during last iteration : -1.53556e-014
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.3072e+007
+rel. change during last iteration : -3.77227e-011
 
 degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
-p-value of the Chisq distribution (FIT_P)              : 0.995159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 671.384
+variance of residuals (reduced chisquare) = WSSR/ndf   : 450757
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-i               = 4.49076          +/- 0.01332      (0.2965%)
-j               = -159.533         +/- 0.1193       (0.0748%)
+i               = 74.846           +/- 0.2219       (0.2965%)
+j               = 113617           +/- 119.3        (0.105%)
 
 correlation matrix of the fit parameters:
                 i      j      
@@ -176,10 +176,10 @@ j              -0.867  1.000
 
 
 *******************************************************************************
-Fri Mar 13 23:58:45 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'StickstoffBeHeizen.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'StickstoffBeHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 31
 function used for fitting: K(x)
@@ -187,22 +187,22 @@ function used for fitting: K(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   k             l            
-   0 2.2388686183e+06  0.00e+00 1.31e+01  1.000000e+00  1.000000e+00
-   4 2.5571782842e+03 -2.29e-02 1.31e-03  6.526781e+00 -1.721738e+02
+   0 3.0924530655e+12  0.00e+00 1.68e+02  1.087797e-01  1.009762e+02
+   3 2.5571782842e+09 -3.75e-01 1.68e-01  1.087797e+02  1.009762e+05
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 2557.18
-rel. change during last iteration : -2.29139e-007
+After 3 iterations the fit converged.
+final sum of squares of residuals : 2.55718e+009
+rel. change during last iteration : -3.74834e-006
 
 degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.39034
-variance of residuals (reduced chisquare) = WSSR/ndf   : 88.1786
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9390.34
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.81786e+007
 p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-k               = 6.52678          +/- 0.1866       (2.859%)
-l               = -172.174         +/- 1.689        (0.9809%)
+k               = 108.78           +/- 3.11         (2.859%)
+l               = 100976           +/- 1689         (1.672%)
 
 correlation matrix of the fit parameters:
                 k      l      
@@ -211,10 +211,10 @@ l              -0.872  1.000
 
 
 *******************************************************************************
-Fri Mar 13 23:58:45 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'StickstoffAlKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'StickstoffAlKuehlen.dat' u ($1*30/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 20
 function used for fitting: M(x)
@@ -222,34 +222,34 @@ function used for fitting: M(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   m             n            
-   0 1.0594036375e+08  0.00e+00 2.20e+03  1.000000e+00  1.000000e+00
-   5 3.5860757875e+02 -4.73e-08 2.20e-02  1.739992e-02  4.589646e+00
+   0 4.5790435217e+04  0.00e+00 1.16e+03 -4.552228e-04  5.179968e+00
+   3 1.2570283300e+04 -1.83e-03 1.16e+00 -4.556456e-04  5.051757e+00
 
-After 5 iterations the fit converged.
-final sum of squares of residuals : 358.608
-rel. change during last iteration : -4.73157e-013
+After 3 iterations the fit converged.
+final sum of squares of residuals : 12570.3
+rel. change during last iteration : -1.83313e-008
 
 degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.46348
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.9226
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 26.4263
+variance of residuals (reduced chisquare) = WSSR/ndf   : 698.349
 p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-m               = 0.0173999        +/- 0.0007269    (4.178%)
-n               = 4.58965          +/- 0.009279     (0.2022%)
+m               = -0.000455646     +/- 10.78        (2.365e+006%)
+n               = 5.05176          +/- 0.03559      (0.7045%)
 
 correlation matrix of the fit parameters:
                 m      n      
 m               1.000 
-n              -0.897  1.000 
+n              -0.853  1.000 
 
 
 *******************************************************************************
-Fri Mar 13 23:58:45 2015
+Sun Mar 15 23:15:42 2015
 
 
-FIT:    data read from 'StickstoffBeKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'StickstoffBeKuehlen.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 21
 function used for fitting: O(x)
@@ -257,34 +257,34 @@ function used for fitting: O(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   o             p            
-   0 1.3315719145e+07  0.00e+00 1.07e+03  1.000000e+00  1.000000e+00
-   4 3.6183188743e+02 -3.45e-01 1.07e-01  5.241493e-02  4.437178e+00
+   0 8.3689705246e+04  0.00e+00 1.26e+03 -6.048415e-04  5.262773e+00
+   3 2.7944010120e+04 -3.51e-03 1.26e+00 -6.059120e-04  5.110936e+00
 
-After 4 iterations the fit converged.
-final sum of squares of residuals : 361.832
-rel. change during last iteration : -3.45315e-006
+After 3 iterations the fit converged.
+final sum of squares of residuals : 27944
+rel. change during last iteration : -3.51008e-008
 
 degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.36392
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.0438
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 38.3502
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1470.74
 p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-o               = 0.0524149        +/- 0.001411     (2.691%)
-p               = 4.43718          +/- 0.009149     (0.2062%)
+o               = -0.000605912     +/- 13.88        (2.29e+006%)
+p               = 5.11094          +/- 0.04268      (0.8351%)
 
 correlation matrix of the fit parameters:
                 o      p      
 o               1.000 
-p              -0.893  1.000 
+p              -0.816  1.000 
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:31 2015
 
 
-FIT:    data read from 'heizenAl.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'heizenAl.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 7
 function used for fitting: A(x)
@@ -292,22 +292,22 @@ function used for fitting: A(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   a             b            
-   0 3.7556560958e+00  0.00e+00 7.44e+01  1.817270e+01  2.236047e+01
-   1 3.7556560958e+00 -9.46e-11 7.44e+00  1.817270e+01  2.236047e+01
+   0 3.7556560958e+06  0.00e+00 5.50e+05  3.028784e+02  2.955105e+05
+   1 3.7556560958e+06 -7.98e-09 5.50e+04  3.028784e+02  2.955105e+05
 
 After 1 iterations the fit converged.
-final sum of squares of residuals : 3.75566
-rel. change during last iteration : -9.45964e-016
+final sum of squares of residuals : 3.75566e+006
+rel. change during last iteration : -7.98491e-014
 
 degrees of freedom    (FIT_NDF)                        : 5
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
-p-value of the Chisq distribution (FIT_P)              : 0.585104
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 866.678
+variance of residuals (reduced chisquare) = WSSR/ndf   : 751131
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-a               = 18.1727          +/- 0.1254       (0.6903%)
-b               = 22.3605          +/- 0.2309       (1.033%)
+a               = 302.878          +/- 2.091        (0.6903%)
+b               = 295510           +/- 230.9        (0.07814%)
 
 correlation matrix of the fit parameters:
                 a      b      
@@ -316,10 +316,10 @@ b              -0.840  1.000
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:32 2015
 
 
-FIT:    data read from 'heizenBe.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'heizenBe.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 11
 function used for fitting: C(x)
@@ -327,22 +327,22 @@ function used for fitting: C(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   c             d            
-   0 7.3997037229e+00  0.00e+00 7.15e+01  1.130793e+01  1.847285e+01
-   1 7.3997037229e+00 -2.52e-10 7.15e+01  1.130793e+01  1.847285e+01
+   0 7.3997037229e+06  0.00e+00 5.41e+05  1.884656e+02  2.916229e+05
+   1 7.3997037229e+06  0.00e+00 5.41e+05  1.884656e+02  2.916229e+05
 
 After 1 iterations the fit converged.
-final sum of squares of residuals : 7.3997
-rel. change during last iteration : -2.52061e-015
+final sum of squares of residuals : 7.3997e+006
+rel. change during last iteration : 0
 
 degrees of freedom    (FIT_NDF)                        : 9
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
-p-value of the Chisq distribution (FIT_P)              : 0.595579
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 906.747
+variance of residuals (reduced chisquare) = WSSR/ndf   : 822189
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-c               = 11.3079          +/- 0.06646      (0.5877%)
-d               = 18.4729          +/- 0.2006       (1.086%)
+c               = 188.466          +/- 1.108        (0.5877%)
+d               = 291623           +/- 200.6        (0.06879%)
 
 correlation matrix of the fit parameters:
                 c      d      
@@ -351,10 +351,10 @@ d              -0.852  1.000
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:32 2015
 
 
-FIT:    data read from 'kuehlenAl.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'kuehlenAl.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 20
 function used for fitting: E(x)
@@ -362,34 +362,34 @@ function used for fitting: E(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   e             f            
-   0 1.4471032247e+01  0.00e+00 5.14e+02 -3.749223e-02  4.328811e+00
-   1 1.4471032247e+01 -1.26e-09 5.14e+02 -3.749223e-02  4.328811e+00
+   0 6.4975678143e+03  0.00e+00 3.67e+03 -1.160770e-04  5.817500e+00
+   1 6.4975678143e+03 -1.11e-08 3.67e+02 -1.160770e-04  5.817500e+00
 
 After 1 iterations the fit converged.
-final sum of squares of residuals : 14.471
-rel. change during last iteration : -1.26435e-014
+final sum of squares of residuals : 6497.57
+rel. change during last iteration : -1.11e-013
 
 degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.89663
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803946
-p-value of the Chisq distribution (FIT_P)              : 0.69791
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 18.9994
+variance of residuals (reduced chisquare) = WSSR/ndf   : 360.976
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-e               = -0.0374922       +/- 0.0004188    (1.117%)
-f               = 4.32881          +/- 0.002262     (0.05225%)
+e               = -0.000116077     +/- 2.746        (2.366e+006%)
+f               = 5.8175           +/- 0.009636     (0.1656%)
 
 correlation matrix of the fit parameters:
                 e      f      
 e               1.000 
-f              -0.849  1.000 
+f              -0.870  1.000 
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:32 2015
 
 
-FIT:    data read from 'kuehlenBe.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'kuehlenBe.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
         format = x:z:s
         #datapoints = 21
 function used for fitting: G(x)
@@ -397,34 +397,34 @@ function used for fitting: G(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   g             h            
-   0 9.5574905312e+00  0.00e+00 5.68e+02 -2.274662e-02  4.342827e+00
-   1 9.5574905312e+00 -1.52e-09 5.68e+02 -2.274662e-02  4.342827e+00
+   0 3.3916877853e+03  0.00e+00 3.78e+03 -7.609188e-05  5.835158e+00
+   1 3.3916877853e+03 -5.43e-09 3.78e+02 -7.609188e-05  5.835158e+00
 
 After 1 iterations the fit converged.
-final sum of squares of residuals : 9.55749
-rel. change during last iteration : -1.52405e-014
+final sum of squares of residuals : 3391.69
+rel. change during last iteration : -5.43012e-014
 
 degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.709243
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.503026
-p-value of the Chisq distribution (FIT_P)              : 0.963031
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 13.3608
+variance of residuals (reduced chisquare) = WSSR/ndf   : 178.51
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-g               = -0.0227466       +/- 0.0002774    (1.22%)
-h               = 4.34283          +/- 0.001515     (0.03488%)
+g               = -7.60919e-005    +/- 1.75         (2.3e+006%)
+h               = 5.83516          +/- 0.006035     (0.1034%)
 
 correlation matrix of the fit parameters:
                 g      h      
 g               1.000 
-h              -0.833  1.000 
+h              -0.850  1.000 
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:32 2015
 
 
-FIT:    data read from 'StickstoffAlHeizen.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'StickstoffAlHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 31
 function used for fitting: I(x)
@@ -432,22 +432,22 @@ function used for fitting: I(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   i             j            
-   0 1.3071953672e+01  0.00e+00 2.36e+02  4.490758e+00 -1.595334e+02
-   1 1.3071953672e+01 -1.36e-10 2.36e+01  4.490758e+00 -1.595334e+02
+   0 1.3071953672e+07  0.00e+00 1.73e+05  7.484597e+01  1.136166e+05
+   1 1.3071953672e+07 -1.37e-09 1.73e+04  7.484597e+01  1.136166e+05
 
 After 1 iterations the fit converged.
-final sum of squares of residuals : 13.072
-rel. change during last iteration : -1.35891e-015
+final sum of squares of residuals : 1.3072e+007
+rel. change during last iteration : -1.36792e-014
 
 degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
-p-value of the Chisq distribution (FIT_P)              : 0.995159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 671.384
+variance of residuals (reduced chisquare) = WSSR/ndf   : 450757
+p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-i               = 4.49076          +/- 0.01332      (0.2965%)
-j               = -159.533         +/- 0.1193       (0.0748%)
+i               = 74.846           +/- 0.2219       (0.2965%)
+j               = 113617           +/- 119.3        (0.105%)
 
 correlation matrix of the fit parameters:
                 i      j      
@@ -456,10 +456,10 @@ j              -0.867  1.000
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:22:32 2015
 
 
-FIT:    data read from 'StickstoffBeHeizen.dat' u 1:(T($2)):(U($2)*V)
+FIT:    data read from 'StickstoffBeHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V)
         format = x:z:s
         #datapoints = 31
 function used for fitting: K(x)
@@ -467,8 +467,360 @@ function used for fitting: K(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   k             l            
-   0 2.5571782842e+03  0.00e+00 2.62e+02  6.526781e+00 -1.721738e+02
-   1 2.5571782842e+03 -8.89e-11 2.62e+01  6.526781e+00 -1.721738e+02
+   0 2.5571782842e+09  0.00e+00 1.68e+05  1.087797e+02  1.009762e+05
+   1 2.5571782842e+09 -4.85e-10 1.68e+04  1.087797e+02  1.009762e+05
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 2.55718e+009
+rel. change during last iteration : -4.84822e-015
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9390.34
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.81786e+007
+p-value of the Chisq distribution (FIT_P)              : 0
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+k               = 108.78           +/- 3.11         (2.859%)
+l               = 100976           +/- 1689         (1.672%)
+
+correlation matrix of the fit parameters:
+                k      l      
+k               1.000 
+l              -0.872  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:22:32 2015
+
+
+FIT:    data read from 'StickstoffAlKuehlen.dat' u ($1*30/10**5):(log(T($2))):(U($2)*V/T($2))
+        format = x:z:s
+        #datapoints = 20
+function used for fitting: M(x)
+	M(x)=m*x+n
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             n            
+   0 1.2570283300e+04  0.00e+00 1.14e+03 -4.556456e-04  5.051757e+00
+   1 1.2570283300e+04 -1.92e-07 1.14e+02 -4.556456e-04  5.051757e+00
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 12570.3
+rel. change during last iteration : -1.91966e-012
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 26.4263
+variance of residuals (reduced chisquare) = WSSR/ndf   : 698.349
+p-value of the Chisq distribution (FIT_P)              : 0
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = -0.000455646     +/- 10.78        (2.365e+006%)
+n               = 5.05176          +/- 0.03559      (0.7045%)
+
+correlation matrix of the fit parameters:
+                m      n      
+m               1.000 
+n              -0.853  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:22:32 2015
+
+
+FIT:    data read from 'StickstoffBeKuehlen.dat' u ($1*60/10**5):(log(T($2))):(U($2)*V/T($2))
+        format = x:z:s
+        #datapoints = 21
+function used for fitting: O(x)
+	O(x)=o*x+p
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   o             p            
+   0 2.7944010120e+04  0.00e+00 1.23e+03 -6.059120e-04  5.110936e+00
+   1 2.7944010120e+04 -3.73e-07 1.23e+02 -6.059122e-04  5.110936e+00
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 27944
+rel. change during last iteration : -3.72872e-012
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 38.3502
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1470.74
+p-value of the Chisq distribution (FIT_P)              : 0
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+o               = -0.000605912     +/- 13.88        (2.29e+006%)
+p               = 5.11094          +/- 0.04268      (0.8351%)
+
+correlation matrix of the fit parameters:
+                o      p      
+o               1.000 
+p              -0.816  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:23:32 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60/10**5):(log(T($2)))
+        format = x:z
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=m*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             b            
+   0 1.7464599760e+12  0.00e+00 2.09e+05 -4.556456e-04  2.955105e+05
+   4 8.0523534726e-03 -5.04e-03 2.09e+01 -4.556456e-04  5.816360e+00
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00805235
+rel. change during last iteration : -5.03743e-008
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0211507
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000447353
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = -0.000455646     +/- 2.734        (6e+005%)
+b               = 5.81636          +/- 0.009825     (0.1689%)
+
+correlation matrix of the fit parameters:
+                m      b      
+m               1.000 
+b              -0.877  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:24:24 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5)
+        format = x:z
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=m*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             b            
+   0 6.7659532229e+12  0.00e+00 4.11e+00 -4.556456e-04  5.816360e+00
+   5 5.9373089340e+05 -1.79e-05 4.11e-05 -1.155685e+01  5.852762e+05
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 593731
+rel. change during last iteration : -1.78546e-010
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 181.618
+variance of residuals (reduced chisquare) = WSSR/ndf   : 32985
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = -11.5568         +/- 0.2348       (2.031%)
+b               = 585276           +/- 84.37        (0.01441%)
+
+correlation matrix of the fit parameters:
+                m      b      
+m               1.000 
+b              -0.877  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'heizenAl.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 7
+function used for fitting: A(x)
+	A(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.0200900463e+06  0.00e+00 1.08e+03  3.028784e+02  5.852762e+05
+   5 3.7556560958e+00 -1.14e-08 1.08e-02  3.028784e+02  2.955105e+05
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.75566
+rel. change during last iteration : -1.14462e-013
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
+p-value of the Chisq distribution (FIT_P)              : 0.585104
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 302.878          +/- 2.091        (0.6903%)
+b               = 295510           +/- 230.9        (0.07814%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.840  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'heizenBe.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 11
+function used for fitting: C(x)
+	C(x)=c*x+d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d            
+   0 7.3997037229e+00  0.00e+00 5.41e+02  1.884656e+02  2.916229e+05
+   1 7.3997037229e+00  0.00e+00 5.41e+02  1.884656e+02  2.916229e+05
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 7.3997
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
+p-value of the Chisq distribution (FIT_P)              : 0.595579
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 188.466          +/- 1.108        (0.5877%)
+d               = 291623           +/- 200.6        (0.06879%)
+
+correlation matrix of the fit parameters:
+                c      d      
+c               1.000 
+d              -0.852  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
+        format = x:z:s
+        #datapoints = 20
+function used for fitting: E(x)
+	E(x)=e*x+f
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   e             f            
+   0 5.4016838734e+08  0.00e+00 3.67e-02 -1.160770e-04  5.817500e+00
+   6 4.7762413224e+01 -8.60e-09 3.67e-08 -1.160715e+01  5.852927e+05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 47.7624
+rel. change during last iteration : -8.59868e-014
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.62895
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.65347
+p-value of the Chisq distribution (FIT_P)              : 0.000163303
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+e               = -11.6072         +/- 0.2354       (2.028%)
+f               = 585293           +/- 82.62        (0.01412%)
+
+correlation matrix of the fit parameters:
+                e      f      
+e               1.000 
+f              -0.870  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'kuehlenBe.dat' u ($1*60):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
+        format = x:z:s
+        #datapoints = 21
+function used for fitting: G(x)
+	G(x)=g*x+h
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   g             h            
+   0 6.0024505866e+08  0.00e+00 3.78e-02 -7.609188e-05  5.835158e+00
+   6 1.8780881238e+01 -5.43e-08 3.78e-08 -7.609008e+00  5.857448e+05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 18.7809
+rel. change during last iteration : -5.42908e-013
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.994217
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.988467
+p-value of the Chisq distribution (FIT_P)              : 0.470972
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+g               = -7.60901         +/- 0.1303       (1.712%)
+h               = 585745           +/- 44.91        (0.007667%)
+
+correlation matrix of the fit parameters:
+                g      h      
+g               1.000 
+h              -0.850  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'StickstoffAlHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 31
+function used for fitting: I(x)
+	I(x)=i*x+j
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   i             j            
+   0 1.3071953672e+01  0.00e+00 1.73e+02  7.484597e+01  1.136166e+05
+   1 1.3071953672e+01  0.00e+00 1.73e+03  7.484597e+01  1.136166e+05
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 13.072
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
+p-value of the Chisq distribution (FIT_P)              : 0.995159
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+i               = 74.846           +/- 0.2219       (0.2965%)
+j               = 113617           +/- 119.3        (0.105%)
+
+correlation matrix of the fit parameters:
+                i      j      
+i               1.000 
+j              -0.867  1.000 
+
+
+*******************************************************************************
+Sun Mar 15 23:26:43 2015
+
+
+FIT:    data read from 'StickstoffBeHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 31
+function used for fitting: K(x)
+	K(x)=k*x+l
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   k             l            
+   0 2.5571782842e+03  0.00e+00 1.68e+02  1.087797e+02  1.009762e+05
+   1 2.5571782842e+03 -8.89e-11 1.68e+01  1.087797e+02  1.009762e+05
 
 After 1 iterations the fit converged.
 final sum of squares of residuals : 2557.18
@@ -481,8 +833,8 @@ p-value of the Chisq distribution (FIT_P)              : 0
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-k               = 6.52678          +/- 0.1866       (2.859%)
-l               = -172.174         +/- 1.689        (0.9809%)
+k               = 108.78           +/- 3.11         (2.859%)
+l               = 100976           +/- 1689         (1.672%)
 
 correlation matrix of the fit parameters:
                 k      l      
@@ -491,10 +843,10 @@ l              -0.872  1.000
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:26:43 2015
 
 
-FIT:    data read from 'StickstoffAlKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'StickstoffAlKuehlen.dat' u ($1*30):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
         format = x:z:s
         #datapoints = 20
 function used for fitting: M(x)
@@ -502,34 +854,34 @@ function used for fitting: M(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   m             n            
-   0 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
-   1 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
+   0 5.2246675552e+07  0.00e+00 8.58e+00 -1.155685e+01  5.051757e+00
+   7 1.0639951574e+02 -3.34e-10 8.58e-06 -4.552228e+01  5.179968e+05
 
-After 1 iterations the fit converged.
-final sum of squares of residuals : 358.608
-rel. change during last iteration : 0
+After 7 iterations the fit converged.
+final sum of squares of residuals : 106.4
+rel. change during last iteration : -3.33903e-015
 
 degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.46348
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.9226
-p-value of the Chisq distribution (FIT_P)              : 0
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.43127
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.91108
+p-value of the Chisq distribution (FIT_P)              : 1.46549e-014
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-m               = 0.0173999        +/- 0.0007269    (4.178%)
-n               = 4.58965          +/- 0.009279     (0.2022%)
+m               = -45.5223         +/- 0.9913       (2.178%)
+n               = 517997           +/- 327.4        (0.06321%)
 
 correlation matrix of the fit parameters:
                 m      n      
 m               1.000 
-n              -0.897  1.000 
+n              -0.853  1.000 
 
 
 *******************************************************************************
-Sat Mar 14 00:01:18 2015
+Sun Mar 15 23:26:43 2015
 
 
-FIT:    data read from 'StickstoffBeKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
+FIT:    data read from 'StickstoffBeKuehlen.dat' u ($1*60):(log(T($2))*10**5):(U($2)*V/T($2)*10**5)
         format = x:z:s
         #datapoints = 21
 function used for fitting: O(x)
@@ -537,864 +889,60 @@ function used for fitting: O(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   o             p            
-   0 3.6183188743e+02  0.00e+00 7.28e+02  5.241493e-02  4.437178e+00
-   1 3.6183188743e+02  0.00e+00 7.28e+03  5.241493e-02  4.437178e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 361.832
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.36392
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.0438
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-o               = 0.0524149        +/- 0.001411     (2.691%)
-p               = 4.43718          +/- 0.009149     (0.2062%)
-
-correlation matrix of the fit parameters:
-                o      p      
-o               1.000 
-p              -0.893  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:48 2015
-
-
-FIT:    data read from 'heizenAl.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 7
-function used for fitting: A(x)
-	A(x)=a*x+b
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   a             b            
-   0 3.7556560958e+00  0.00e+00 7.44e+01  1.817270e+01  2.236047e+01
-   1 3.7556560958e+00  0.00e+00 7.44e+02  1.817270e+01  2.236047e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 3.75566
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 5
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
-p-value of the Chisq distribution (FIT_P)              : 0.585104
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-a               = 18.1727          +/- 0.1254       (0.6903%)
-b               = 22.3605          +/- 0.2309       (1.033%)
-
-correlation matrix of the fit parameters:
-                a      b      
-a               1.000 
-b              -0.840  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:48 2015
-
-
-FIT:    data read from 'heizenBe.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 11
-function used for fitting: C(x)
-	C(x)=c*x+d
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   c             d            
-   0 7.3997037229e+00  0.00e+00 7.15e+01  1.130793e+01  1.847285e+01
-   1 7.3997037229e+00 -6.12e-10 7.15e+01  1.130793e+01  1.847285e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 7.3997
-rel. change during last iteration : -6.12147e-015
-
-degrees of freedom    (FIT_NDF)                        : 9
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
-p-value of the Chisq distribution (FIT_P)              : 0.595579
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-c               = 11.3079          +/- 0.06646      (0.5877%)
-d               = 18.4729          +/- 0.2006       (1.086%)
-
-correlation matrix of the fit parameters:
-                c      d      
-c               1.000 
-d              -0.852  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'kuehlenAl.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 20
-function used for fitting: E(x)
-	E(x)=e*x+f
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   e             f            
-   0 1.4471032247e+01  0.00e+00 5.14e+02 -3.749223e-02  4.328811e+00
-   1 1.4471032247e+01 -1.51e-09 5.14e+01 -3.749223e-02  4.328811e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 14.471
-rel. change during last iteration : -1.50986e-014
-
-degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.89663
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803946
-p-value of the Chisq distribution (FIT_P)              : 0.69791
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-e               = -0.0374922       +/- 0.0004188    (1.117%)
-f               = 4.32881          +/- 0.002262     (0.05225%)
-
-correlation matrix of the fit parameters:
-                e      f      
-e               1.000 
-f              -0.849  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'kuehlenBe.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: G(x)
-	G(x)=g*x+h
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   g             h            
-   0 9.5574905312e+00  0.00e+00 5.68e+02 -2.274662e-02  4.342827e+00
-   1 9.5574905312e+00 -8.36e-10 5.68e+03 -2.274662e-02  4.342827e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 9.55749
-rel. change during last iteration : -8.36371e-015
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.709243
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.503026
-p-value of the Chisq distribution (FIT_P)              : 0.963031
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-g               = -0.0227466       +/- 0.0002774    (1.22%)
-h               = 4.34283          +/- 0.001515     (0.03488%)
-
-correlation matrix of the fit parameters:
-                g      h      
-g               1.000 
-h              -0.833  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'StickstoffAlHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: I(x)
-	I(x)=i*x+j
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   i             j            
-   0 1.3071953672e+01  0.00e+00 2.36e+02  4.490758e+00 -1.595334e+02
-   1 1.3071953672e+01  0.00e+00 2.36e+01  4.490758e+00 -1.595334e+02
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 13.072
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
-p-value of the Chisq distribution (FIT_P)              : 0.995159
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-i               = 4.49076          +/- 0.01332      (0.2965%)
-j               = -159.533         +/- 0.1193       (0.0748%)
-
-correlation matrix of the fit parameters:
-                i      j      
-i               1.000 
-j              -0.867  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'StickstoffBeHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: K(x)
-	K(x)=k*x+l
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   k             l            
-   0 2.5571782842e+03  0.00e+00 2.62e+02  6.526781e+00 -1.721738e+02
-   1 2.5571782842e+03  0.00e+00 2.62e+05  6.526781e+00 -1.721738e+02
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 2557.18
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.39034
-variance of residuals (reduced chisquare) = WSSR/ndf   : 88.1786
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-k               = 6.52678          +/- 0.1866       (2.859%)
-l               = -172.174         +/- 1.689        (0.9809%)
-
-correlation matrix of the fit parameters:
-                k      l      
-k               1.000 
-l              -0.872  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'StickstoffAlKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 20
-function used for fitting: M(x)
-	M(x)=m*x+n
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   m             n            
-   0 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
-   1 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 358.608
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.46348
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.9226
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-m               = 0.0173999        +/- 0.0007269    (4.178%)
-n               = 4.58965          +/- 0.009279     (0.2022%)
-
-correlation matrix of the fit parameters:
-                m      n      
-m               1.000 
-n              -0.897  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:01:49 2015
-
-
-FIT:    data read from 'StickstoffBeKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: O(x)
-	O(x)=o*x+p
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   o             p            
-   0 3.6183188743e+02  0.00e+00 7.28e+02  5.241493e-02  4.437178e+00
-   1 3.6183188743e+02 -3.14e-10 7.28e+01  5.241493e-02  4.437178e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 361.832
-rel. change during last iteration : -3.14198e-015
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.36392
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.0438
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-o               = 0.0524149        +/- 0.001411     (2.691%)
-p               = 4.43718          +/- 0.009149     (0.2062%)
-
-correlation matrix of the fit parameters:
-                o      p      
-o               1.000 
-p              -0.893  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:30 2015
-
-
-FIT:    data read from 'heizenAl.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 7
-function used for fitting: A(x)
-	A(x)=a*x+b
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   a             b            
-   0 1.2401182840e+05  0.00e+00 3.87e+00  1.000000e+00  1.000000e+00
-   4 3.7556560958e+00 -3.72e-05 3.87e-04  1.817270e+01  2.236047e+01
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 3.75566
-rel. change during last iteration : -3.72298e-010
-
-degrees of freedom    (FIT_NDF)                        : 5
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
-p-value of the Chisq distribution (FIT_P)              : 0.585104
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-a               = 18.1727          +/- 0.1254       (0.6903%)
-b               = 22.3605          +/- 0.2309       (1.033%)
-
-correlation matrix of the fit parameters:
-                a      b      
-a               1.000 
-b              -0.840  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'heizenBe.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 11
-function used for fitting: C(x)
-	C(x)=c*x+d
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   c             d            
-   0 1.6434684716e+05  0.00e+00 5.86e+00  1.000000e+00  1.000000e+00
-   4 7.3997037229e+00 -2.16e-04 5.86e-04  1.130793e+01  1.847285e+01
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 7.3997
-rel. change during last iteration : -2.16487e-009
-
-degrees of freedom    (FIT_NDF)                        : 9
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
-p-value of the Chisq distribution (FIT_P)              : 0.595579
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-c               = 11.3079          +/- 0.06646      (0.5877%)
-d               = 18.4729          +/- 0.2006       (1.086%)
-
-correlation matrix of the fit parameters:
-                c      d      
-c               1.000 
-d              -0.852  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'kuehlenAl.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 20
-function used for fitting: E(x)
-	E(x)=e*x+f
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   e             f            
-   0 6.0836549115e+06  0.00e+00 6.52e+02  1.000000e+00  1.000000e+00
-   4 1.4471032247e+01 -3.80e-01 6.52e-02 -3.749223e-02  4.328811e+00
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 14.471
-rel. change during last iteration : -3.80495e-006
-
-degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.89663
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803946
-p-value of the Chisq distribution (FIT_P)              : 0.69791
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-e               = -0.0374922       +/- 0.0004188    (1.117%)
-f               = 4.32881          +/- 0.002262     (0.05225%)
-
-correlation matrix of the fit parameters:
-                e      f      
-e               1.000 
-f              -0.849  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'kuehlenBe.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: G(x)
-	G(x)=g*x+h
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   g             h            
-   0 8.0706830072e+06  0.00e+00 7.26e+02  1.000000e+00  1.000000e+00
-   4 9.5574905312e+00 -4.72e-01 7.26e-02 -2.274662e-02  4.342827e+00
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 9.55749
-rel. change during last iteration : -4.72334e-006
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.709243
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.503026
-p-value of the Chisq distribution (FIT_P)              : 0.963031
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-g               = -0.0227466       +/- 0.0002774    (1.22%)
-h               = 4.34283          +/- 0.001515     (0.03488%)
-
-correlation matrix of the fit parameters:
-                g      h      
-g               1.000 
-h              -0.833  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'StickstoffAlHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: I(x)
-	I(x)=i*x+j
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   i             j            
-   0 2.2966620238e+06  0.00e+00 1.29e+01  1.000000e+00  1.000000e+00
-   5 1.3071953672e+01 -1.54e-09 1.29e-04  4.490758e+00 -1.595334e+02
+   0 6.3189062082e+07  0.00e+00 1.23e-02 -6.059122e-04  5.110936e+00
+   5 4.1976362119e+00 -6.87e-06 1.23e-07 -6.048415e+01  5.262773e+05
 
 After 5 iterations the fit converged.
-final sum of squares of residuals : 13.072
-rel. change during last iteration : -1.53556e-014
+final sum of squares of residuals : 4.19764
+rel. change during last iteration : -6.86582e-011
 
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
-p-value of the Chisq distribution (FIT_P)              : 0.995159
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-i               = 4.49076          +/- 0.01332      (0.2965%)
-j               = -159.533         +/- 0.1193       (0.0748%)
-
-correlation matrix of the fit parameters:
-                i      j      
-i               1.000 
-j              -0.867  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'StickstoffBeHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: K(x)
-	K(x)=k*x+l
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   k             l            
-   0 2.2388686183e+06  0.00e+00 1.31e+01  1.000000e+00  1.000000e+00
-   4 2.5571782842e+03 -2.29e-02 1.31e-03  6.526781e+00 -1.721738e+02
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 2557.18
-rel. change during last iteration : -2.29139e-007
-
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.39034
-variance of residuals (reduced chisquare) = WSSR/ndf   : 88.1786
-p-value of the Chisq distribution (FIT_P)              : 0
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.47003
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.220928
+p-value of the Chisq distribution (FIT_P)              : 0.999846
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-k               = 6.52678          +/- 0.1866       (2.859%)
-l               = -172.174         +/- 1.689        (0.9809%)
+o               = -60.4842         +/- 0.1701       (0.2812%)
+p               = 526277           +/- 52.31        (0.00994%)
 
 correlation matrix of the fit parameters:
-                k      l      
-k               1.000 
-l              -0.872  1.000 
+                o      p      
+o               1.000 
+p              -0.816  1.000 
 
 
 *******************************************************************************
-Sat Mar 14 00:13:31 2015
+Mon Mar 16 00:12:39 2015
 
 
-FIT:    data read from 'StickstoffAlKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2))*10**5)
+        format = x:z
         #datapoints = 20
-function used for fitting: M(x)
-	M(x)=m*x+n
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=m*x+b
 fitted parameters initialized with current variable values
 
-iter      chisq       delta/lim  lambda   m             n            
-   0 1.0594036375e+08  0.00e+00 2.20e+03  1.000000e+00  1.000000e+00
-   5 3.5860757875e+02 -4.73e-08 2.20e-02  1.739992e-02  4.589646e+00
+iter      chisq       delta/lim  lambda   m             b            
+   0 1.8062739064e+12  0.00e+00 2.09e+05 -4.552228e+01  2.955105e+05
+   5 5.9373089340e+05 -1.14e-07 2.09e+00 -1.155685e+01  5.852762e+05
 
 After 5 iterations the fit converged.
-final sum of squares of residuals : 358.608
-rel. change during last iteration : -4.73157e-013
+final sum of squares of residuals : 593731
+rel. change during last iteration : -1.13743e-012
 
 degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.46348
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.9226
-p-value of the Chisq distribution (FIT_P)              : 0
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 181.618
+variance of residuals (reduced chisquare) = WSSR/ndf   : 32985
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-m               = 0.0173999        +/- 0.0007269    (4.178%)
-n               = 4.58965          +/- 0.009279     (0.2022%)
+m               = -11.5568         +/- 0.2348       (2.031%)
+b               = 585276           +/- 84.37        (0.01441%)
 
 correlation matrix of the fit parameters:
-                m      n      
+                m      b      
 m               1.000 
-n              -0.897  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:13:31 2015
-
-
-FIT:    data read from 'StickstoffBeKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: O(x)
-	O(x)=o*x+p
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   o             p            
-   0 1.3315719145e+07  0.00e+00 1.07e+03  1.000000e+00  1.000000e+00
-   4 3.6183188743e+02 -3.45e-01 1.07e-01  5.241493e-02  4.437178e+00
-
-After 4 iterations the fit converged.
-final sum of squares of residuals : 361.832
-rel. change during last iteration : -3.45315e-006
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.36392
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.0438
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-o               = 0.0524149        +/- 0.001411     (2.691%)
-p               = 4.43718          +/- 0.009149     (0.2062%)
-
-correlation matrix of the fit parameters:
-                o      p      
-o               1.000 
-p              -0.893  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:17 2015
-
-
-FIT:    data read from 'heizenAl.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 7
-function used for fitting: A(x)
-	A(x)=a*x+b
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   a             b            
-   0 3.7556560958e+00  0.00e+00 7.44e+01  1.817270e+01  2.236047e+01
-   1 3.7556560958e+00 -9.46e-11 7.44e+00  1.817270e+01  2.236047e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 3.75566
-rel. change during last iteration : -9.45964e-016
-
-degrees of freedom    (FIT_NDF)                        : 5
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
-p-value of the Chisq distribution (FIT_P)              : 0.585104
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-a               = 18.1727          +/- 0.1254       (0.6903%)
-b               = 22.3605          +/- 0.2309       (1.033%)
-
-correlation matrix of the fit parameters:
-                a      b      
-a               1.000 
-b              -0.840  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:17 2015
-
-
-FIT:    data read from 'heizenBe.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 11
-function used for fitting: C(x)
-	C(x)=c*x+d
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   c             d            
-   0 7.3997037229e+00  0.00e+00 7.15e+01  1.130793e+01  1.847285e+01
-   1 7.3997037229e+00 -2.52e-10 7.15e+01  1.130793e+01  1.847285e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 7.3997
-rel. change during last iteration : -2.52061e-015
-
-degrees of freedom    (FIT_NDF)                        : 9
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
-p-value of the Chisq distribution (FIT_P)              : 0.595579
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-c               = 11.3079          +/- 0.06646      (0.5877%)
-d               = 18.4729          +/- 0.2006       (1.086%)
-
-correlation matrix of the fit parameters:
-                c      d      
-c               1.000 
-d              -0.852  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'kuehlenAl.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 20
-function used for fitting: E(x)
-	E(x)=e*x+f
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   e             f            
-   0 1.4471032247e+01  0.00e+00 5.14e+02 -3.749223e-02  4.328811e+00
-   1 1.4471032247e+01 -1.26e-09 5.14e+02 -3.749223e-02  4.328811e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 14.471
-rel. change during last iteration : -1.26435e-014
-
-degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.89663
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803946
-p-value of the Chisq distribution (FIT_P)              : 0.69791
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-e               = -0.0374922       +/- 0.0004188    (1.117%)
-f               = 4.32881          +/- 0.002262     (0.05225%)
-
-correlation matrix of the fit parameters:
-                e      f      
-e               1.000 
-f              -0.849  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'kuehlenBe.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: G(x)
-	G(x)=g*x+h
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   g             h            
-   0 9.5574905312e+00  0.00e+00 5.68e+02 -2.274662e-02  4.342827e+00
-   1 9.5574905312e+00 -1.52e-09 5.68e+02 -2.274662e-02  4.342827e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 9.55749
-rel. change during last iteration : -1.52405e-014
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.709243
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.503026
-p-value of the Chisq distribution (FIT_P)              : 0.963031
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-g               = -0.0227466       +/- 0.0002774    (1.22%)
-h               = 4.34283          +/- 0.001515     (0.03488%)
-
-correlation matrix of the fit parameters:
-                g      h      
-g               1.000 
-h              -0.833  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'StickstoffAlHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: I(x)
-	I(x)=i*x+j
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   i             j            
-   0 1.3071953672e+01  0.00e+00 2.36e+02  4.490758e+00 -1.595334e+02
-   1 1.3071953672e+01 -1.36e-10 2.36e+01  4.490758e+00 -1.595334e+02
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 13.072
-rel. change during last iteration : -1.35891e-015
-
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
-p-value of the Chisq distribution (FIT_P)              : 0.995159
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-i               = 4.49076          +/- 0.01332      (0.2965%)
-j               = -159.533         +/- 0.1193       (0.0748%)
-
-correlation matrix of the fit parameters:
-                i      j      
-i               1.000 
-j              -0.867  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'StickstoffBeHeizen.dat' u 1:(T($2)):(U($2)*V)
-        format = x:z:s
-        #datapoints = 31
-function used for fitting: K(x)
-	K(x)=k*x+l
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   k             l            
-   0 2.5571782842e+03  0.00e+00 2.62e+02  6.526781e+00 -1.721738e+02
-   1 2.5571782842e+03 -8.89e-11 2.62e+01  6.526781e+00 -1.721738e+02
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 2557.18
-rel. change during last iteration : -8.89158e-016
-
-degrees of freedom    (FIT_NDF)                        : 29
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.39034
-variance of residuals (reduced chisquare) = WSSR/ndf   : 88.1786
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-k               = 6.52678          +/- 0.1866       (2.859%)
-l               = -172.174         +/- 1.689        (0.9809%)
-
-correlation matrix of the fit parameters:
-                k      l      
-k               1.000 
-l              -0.872  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'StickstoffAlKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 20
-function used for fitting: M(x)
-	M(x)=m*x+n
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   m             n            
-   0 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
-   1 3.5860757875e+02  0.00e+00 7.91e+02  1.739992e-02  4.589646e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 358.608
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 18
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.46348
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.9226
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-m               = 0.0173999        +/- 0.0007269    (4.178%)
-n               = 4.58965          +/- 0.009279     (0.2022%)
-
-correlation matrix of the fit parameters:
-                m      n      
-m               1.000 
-n              -0.897  1.000 
-
-
-*******************************************************************************
-Sat Mar 14 00:16:18 2015
-
-
-FIT:    data read from 'StickstoffBeKuehlen.dat' u 1:(log(T($2))):(U($2)*V/T($2))
-        format = x:z:s
-        #datapoints = 21
-function used for fitting: O(x)
-	O(x)=o*x+p
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   o             p            
-   0 3.6183188743e+02  0.00e+00 7.28e+02  5.241493e-02  4.437178e+00
-   1 3.6183188743e+02  0.00e+00 7.28e+03  5.241493e-02  4.437178e+00
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 361.832
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 19
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.36392
-variance of residuals (reduced chisquare) = WSSR/ndf   : 19.0438
-p-value of the Chisq distribution (FIT_P)              : 0
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-o               = 0.0524149        +/- 0.001411     (2.691%)
-p               = 4.43718          +/- 0.009149     (0.2062%)
-
-correlation matrix of the fit parameters:
-                o      p      
-o               1.000 
-p              -0.893  1.000 
+b              -0.877  1.000 

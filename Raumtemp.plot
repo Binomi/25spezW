@@ -17,3 +17,6 @@ p 'heizenAl.dat' u 1:(T($2)):(U($2)*V) w e t'Aluminium',\
 set output
 !epstopdf Raumtemp.eps
 !rm Raumtemp.eps
+
+set terminal windows
+replot
