@@ -189,6 +189,77 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 
 \section{Auswertung}
 \label{sec:auswertung}
+\subsection{Temperaturverläufe}
+\begin{figure}[!htb]
+	\centering
+	\input{Raumtemp.tex}
+	\caption{Raumtemperatur: Erhitzen und Abkühlen von Aluminium und Beryllium}
+	\label{fig:Raumtemp}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\input{Stickstofftemp.tex}
+	\caption{Stickstofftemperatur: Erhitzen und Abkühlen von Aluminium und Beryllium}
+	\label{fig:Stickstofftemp}
+\end{figure}
+
+\subsection{Widerstand}
+\begin{figure}[!htb]
+	\centering
+	\input{Widerstand_Raum.tex}
+	\caption{Raumtemperatur: Widerstand des Cu-Drahtes}
+	\label{fig:Widerstand_Raum}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\input{Widerstand_Stick.tex}
+	\caption{Stickstofftemperatur: Widerstand des Cu-Drahtes}
+	\label{fig:Widerstand_Stick}
+\end{figure}
+
+\subsection{Leistung}
+\begin{figure}[!htb]
+	\centering
+	\input{Leistung_Raum.tex}
+	\caption{Raumtemperatur: beim Heizen hineingesteckte Leistung}
+	\label{fig:Leistung_Raum}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\input{Leistung_Stick.tex}
+	\caption{Stickstofftemperatur: beim Heizen hineingesteckte Leistung}
+	\label{fig:Leistung_Stick}
+\end{figure}
+
+\subsection{molare Wärmekapazität}
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& $a~[10^{-3}\cdot\si{\kelvin\per\second}}]$ & $\lambda~[10^{-5}\cdot\si{\per\second}}]$\\
+		\hline
+		Al RT	& $	303	\pm	2	$ & $	11.61	\pm	0.24	$ \\
+		Be RT	& $	188.5	\pm	1.2	$ & $	7.61	\pm	0.14	$ \\
+		Al Stickstoff	& $	74.85	\pm	0.23	$ & $	45.5	\pm	1.0	$ \\
+		Be Stickstoff	& $	109	\pm	4	$ & $	60.48	\pm	0.18	$ \\
+		\hline
+	\end{tabular}
+	\caption{Temperaturverläufe: gefittete Parameter}
+	\label{tab:fitwerte}
+\end{table}
+
+\begin{figure}[!htb]
+	\centering
+	\input{waerme.tex}
+	\caption{molare Wärmekapazität bei verschiedenen Temperaturen für Aluminium und Beryllium sowie Vergleich mit dem Dulong-Petit-Wert}
+	\label{fig:Leistung_Stick}
+\end{figure}
+
+
 
 \section{Diskussion}
 \label{sec:diskussion}

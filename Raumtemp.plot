@@ -2,7 +2,7 @@ reset
 set terminal epslatex color
 set output 'Raumtemp.tex'
 set xlabel 'Zeit $t$ [min]'
-set ylabel 'Temperatur $T$ [$^\circ C$]'
+set ylabel 'Temperatur $T$ [$\si{\celsius}$]'
 set key top right
 
 T(x)=0.219+20.456*x-0.302*x**2+0.009*x**3
@@ -17,6 +17,3 @@ p 'heizenAl.dat' u 1:(T($2)):(U($2)*V) w e t'Aluminium',\
 set output
 !epstopdf Raumtemp.eps
 !rm Raumtemp.eps
-
-set terminal windows
-replot
