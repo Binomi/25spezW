@@ -4,6 +4,7 @@ set output 'waerme.tex'
 set xlabel 'Temperatur $T$ [K]'
 set ylabel 'molare Wärmekapatität $c_m$  [$\si[per-mode=fraction]{\joule\per\kelvin\per\mol}$]'
 set key bottom right
+set xrange [100:400]
 set yrange [0:*]
 
 T(x)=0.219+20.456*x-0.302*x**2+0.009*x**3+273.15
@@ -63,12 +64,10 @@ p 'heizenAl.dat' u (T($2)):(3*(10.5+0.25*$0)*0.5/(Al_m*(Al_a+Al_l*(T($2)-T0)))*A
   'heizenBe.dat' u (T($2)):(3*$3*0.5/(Be_m*(Be_a+Be_l*(T($2)-T0)))*Be_M):(Be_M/Be_m*sqrt((1.2*0.5/(Be_a+Be_l*(T($2)-T0)))**2+(3*$3*0.5/(Be_a+Be_l*(T($2)-T0)))**2*(Be_a_err**2+((T($2)-T0)*Be_l_err)**2+(Be_l*U($2)*V)**2))) w e t'Beryllium',\
   'stickstoffAlHeizen.dat' u (T($2)):($3*0.5/(Al_m*(N_Al_a+N_Al_l*(T($2)-T1)))*Al_M):(Al_M/Al_m*sqrt((0.4*0.5/(N_Al_a+N_Al_l*(T($2)-T1)))**2+($3*0.5/(N_Al_a+N_Al_l*(T($2)-T1)))**2*(N_Al_a_err**2+((T($2)-T1)*N_Al_l_err)**2+(N_Al_l*U($2)*V)**2))) w e pt 1 lt 1 notitle,\
   'stickstoffBeHeizen.dat' u (T($2)+T_alt(0.88)):($3*0.5/(Be_m*(N_Be_a+N_Be_l*(T($2)+T_alt(0.88)-T2)))*Be_M):(Be_M/Be_m*sqrt(($4*0.5/(N_Be_a+N_Be_l*(T($2)+T_alt(0.88)-T2))**2+($3*0.5/(N_Be_a+N_Be_l*(T($2)+T_alt(0.88)-T2)))**2*(N_Be_a_err**2+((T($2)+T_alt(0.88)-T2)*N_Be_l_err)**2+(N_Be_l*U($2)*V)**2)))) w e pt 2 lt 2 notitle,\
-  D(x) lt -1 t 'Dulong-Petit-Wert',c(x) lt 0 t 'Be: Wert nach Debye'
-  
-#:(1.2*0.5) w e
-#:($4*0.5) w e
+  D(x) lt -1 t 'Dulong-Petit-Wert',\
+  'debye.dat' u ($1*428):2  w l lt -1 lc 1 t 'Al: Wert nach Debye',\
+  'debye.dat' u ($1*1440):2  w l lt -1 lc 2 t 'Be: Wert nach Debye'
 
-print T0,T1,T2,TN
 
 set output
 !epstopdf waerme.eps

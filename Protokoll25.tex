@@ -184,16 +184,33 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \section{Theorie}
 \label{sec:theorie}
 
+\subsection{Debye-Modell}
+\begin{align}
+	c_m=9R \left(\frac{T}{\theta_D}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x
+	\label{eq:debye}
+\end{align}
+
+\subsection{Wärmekapazität}
+\begin{align}
+	C=\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
+	\label{eq:molWaerme}
+\end{align}
+
 \section{Durchführung}
 \label{sec:durchfuehrung}
 
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Temperaturverläufe}
+Das Thermoelement gibt eine Spannung in Millivolt zurück.
+Diese kann man mit der folgenden Formel und ihrer Fehlerformel in eine Temperatur umrechnen:
 \begin{align}
-	T[\si{\celsius}]&=0.219+20.456 \cdot U - 0.302\cdot U^2+0.009\cdot U^3 \\
-	\sigma_T&=20.456 - 0.604\cdot U+0.027\cdot U^2
+	T[\si{\celsius}]&=0.219+20.456 \cdot U - 0.302\cdot U^2+0.009\cdot U^3 \,, \\
+	\sigma_T&=(20.456 - 0.604\cdot U+0.027\cdot U^2)\cdot \sigma_U\,.
 \end{align}
+Dabei nehmen wir eine Ungenauigkeit von $\sigma_U=0.02\,$mV an.
+In Abbildung \ref{fig:Raumtemp} und \ref{fig:Stickstofftemp} ist die Temperatur der beiden Materialien Aluminium und Beryllium gegen die Zeit aufgetragen -- zuerst für Raumtemperatur, dann für Stickstofftemperatur.
+Man kann gut erkennen, wann geheizt wurde und wann sich der Körper wieder abkühlt.
 \begin{figure}[!htb]
 	\centering
 	\input{Raumtemp.tex}
@@ -247,39 +264,52 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 \end{figure}
 
 \subsection{molare Wärmekapazität}
-\begin{align}
-	C=\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
-\end{align}
 Für das Erwärmen wird ein linearer Zusammenhang zwischen Temperatur und Zeit erwartet: $T(t)=a\cdot t +b$.
 Dann ist $\frac{\dif T}{\dif t}|_\text{erw}=a$.
-Für das Abkühlen kann man einen exponentiellen Abfall der Temperatur mit der Zeit annehmen: $T(t)=c\cdot e^{-\lambda t}$.
-Somit ist $\frac{\dif T}{\dif t}|_\text{abk}=-\lambda\cdot T$.
+Für das Abkühlen kann man einen exponentiellen Abfall der Temperatur mit der Zeit annehmen.
+Zudem wird sich die Temperatur dem thermischen Gleichgewicht angleichen: $T(t)=T_0+(T_1-T_0)\cdot e^{-\lambda t}$.
+Somit ist $\frac{\dif T}{\dif t}|_\text{abk}=-\lambda\cdot (T-T_0)$.
+Dabei ist $T_0$ die Temperatur des thermischen Gleichgewichtes.
+Setzt man dies in \eqref{eq:molWaerme} ein, ergibt sich
 \begin{align}
-	c_m&=\frac{M}{m}\frac{P}{a+\lambda T}\\
-	\sigma{c_m}&=\frac{M}{m}\sqrt{\frac{\sigma_P^2}{(a+\lambda T)^2}+\frac{P^2}{(a+\lambda T)^4}\cdot (\sigma_a^2+T^2 \sigma_\lambda^2+\lambda^2\sigma_T^2)}
+	c_m&=\frac{M}{m}\frac{P}{a+\lambda (T-T_0)}
+	\label{eq:c_m}\\
+	\sigma{c_m}&=\frac{M}{m}\sqrt{\frac{\sigma_P^2}{(a+\lambda (T-T_0))^2}+\frac{P^2}{(a+\lambda (T-T_0))^4}\cdot (\sigma_a^2+(T-T_0)^2 \sigma_\lambda^2+\lambda^2\sigma_T^2)}\,.
+	\label{eq:sigma_c_m}
 \end{align}
-
+Um die Temperatur $T_0$ zu ermitteln, werden die Werte vor dem Erhitzen verwendet.
+Diese waren bei Zimmertemperatur erwartungsgemäß konstant.
+Somit liegt die Zimmertemperatur bei $T_0(0.88\,\text{mV})=18\si{\celsius}$.
+Bei dem zweiten Versuchsteil wurde vor dem Erhitzen noch nicht das thermische Gleichgewicht erreicht.
+Man nimmt wieder an, dass sich die Temperatur exponentiell abfallend an die Gleichgewichtstemperatur nähert.
+Mit einem $\chi^2$-Fit ergibt sich für die Versuchsreihe mit Aluminium $T_0=110\si\celsius$, für die mit Beryllium $T_0=106\si\celsius$.
+So kann man jetzt $\lambda$ bestimmen, indem man die Temperaturdifferenz zu $T_0$ während des Abkühlvorgangs logarithmisch gegen die Zeit aufträgt.
+Es ergibt sich eine Gerade, deren Steigung mit einer linearen Regression bestimmt werden kann.
+Die Werte für $a$ und $\lambda$ der 4 Versuchsreihen befinden sich in Tabelle \ref{tab:fitwerte}.
 \begin{table}[!htb]
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
 		& $a~[10^{-3}\cdot\si{\kelvin\per\second}}]$ & $\lambda~[10^{-5}\cdot\si{\per\second}}]$\\
 		\hline
-		Al RT	& $	303	\pm	2	$ & $	11.61	\pm	0.24	$ \\
-		Be RT	& $	188.5	\pm	1.2	$ & $	7.61	\pm	0.14	$ \\
-		Al Stickstoff	& $	74.85	\pm	0.23	$ & $	45.5	\pm	1.0	$ \\
-		Be Stickstoff	& $	109	\pm	4	$ & $	60.48	\pm	0.18	$ \\
+		Al RT	& $	303	\pm	2	$ & $	87.8	\pm	0.6	$ \\
+		Be RT	& $	188.5	\pm	1.2	$ & $	51.4	\pm	0.6	$ \\
+		Al Stickstoff	& $	74.85	\pm	0.23	$ & $	158.8 \pm 0.4	$ \\
+		Be Stickstoff	& $	109	\pm	4	$ & $	171 \pm 5$ \\
 		\hline
 	\end{tabular}
 	\caption{Temperaturverläufe: gefittete Parameter}
 	\label{tab:fitwerte}
 \end{table}
+Mit diesen und Formel \eqref{eq:c_m} sowie \eqref{eq:sigma_c_m} kann man nun die molare Wärme berechnen und gegen die Temperatur auftragen (vgl. Abb.\ref{fig:molWaerme}).
+Nach Dulong-Petit sollte sich der konstante Wert $3R$ ergeben, nach dem Debye-Modell erwartet man einen Verlauf nach \eqref{eq:debye}.
+Dabei liegt die Debye-Temperatur nach \cite[S.226]{prakti} für Aluminium bei $\theta_D=428\,\si\kelvin$, für Beryllium bei $\theta_D=1440\,\si\kelvin$. 
 
 \begin{figure}[!htb]
 	\centering
 	\input{waerme.tex}
-	\caption{molare Wärmekapazität bei verschiedenen Temperaturen für Aluminium und Beryllium sowie Vergleich mit dem Dulong-Petit-Wert}
-	\label{fig:Leistung_Stick}
+	\caption{molare Wärmekapazität bei verschiedenen Temperaturen für Aluminium und Beryllium sowie Vergleich mit dem Dulong-Petit-Wert und den Verläufen nach Debye}
+	\label{fig:molWaerme}
 \end{figure}
 
 
@@ -289,7 +319,7 @@ Somit ist $\frac{\dif T}{\dif t}|_\text{abk}=-\lambda\cdot T$.
 
 \section{Anhang}
 
-%\bibliography{literatur}
-%\bibliographystyle{babalpha}
+\bibliography{literatur}
+\bibliographystyle{babalpha}
 
 \end{document}
