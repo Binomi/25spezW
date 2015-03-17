@@ -192,7 +192,7 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 
 \subsection{Wärmekapazität}
 \begin{align}
-	C=\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
+	c_M=\frac{M}{m}\cdot\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
 	\label{eq:molWaerme}
 \end{align}
 
@@ -211,6 +211,8 @@ Diese kann man mit der folgenden Formel und ihrer Fehlerformel in eine Temperatu
 Dabei nehmen wir eine Ungenauigkeit von $\sigma_U=0.02\,$mV an.
 In Abbildung \ref{fig:Raumtemp} und \ref{fig:Stickstofftemp} ist die Temperatur der beiden Materialien Aluminium und Beryllium gegen die Zeit aufgetragen -- zuerst für Raumtemperatur, dann für Stickstofftemperatur.
 Man kann gut erkennen, wann geheizt wurde und wann sich der Körper wieder abkühlt.
+Für die Stickstofftemperatur-Messung von Beryllium wurde der Referenzkontakt nicht in Eiswasser getaucht.
+Deshalb ist die Referenztemperatur nicht $0\si\celsius$, sondern Raumtemperatur $T(0.88)=18\si\celsius$.
 \begin{figure}[!htb]
 	\centering
 	\input{Raumtemp.tex}
@@ -226,41 +228,34 @@ Man kann gut erkennen, wann geheizt wurde und wann sich der Körper wieder abkü
 \end{figure}
 
 \subsection{Widerstand}
+Den Widerstand des Kupferdrahtes kann man leicht berechnen, indem man die Heizspannung $U$ durch die Stromstärke $I$, die konstant bei$0.5\,$A liegt, teilt:
 \begin{align}
-	R&=\frac{U}{I}\\
-	\sigma_R&=\frac{\sigma_U}{I}
+	R&=\frac{U}{I}\,,\\
+	\sigma_R&=\frac{\sigma_U}{I}\,.
 \end{align}
+Wir nehmen einen Fehler der Heizspannung von $\sigma_U=0.4\,$V an, da sich die Spannung während 30 Sekunden stark ändern konnte.
+Wenn die Spannung mit dem Schalter verdreifacht wurde, verdreifacht sich der Fehler auch auf $\sigma_U=1.2\,$V.
+In Abb.\ref{fig:Widerstand} ist der Widerstand des Drahtes während der vier Heizvorgänge gegen die Temperatur aufgetragen.
 \begin{figure}[!htb]
 	\centering
-	\input{Widerstand_Raum.tex}
-	\caption{Raumtemperatur: Widerstand des Cu-Drahtes}
-	\label{fig:Widerstand_Raum}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\input{Widerstand_Stick.tex}
-	\caption{Stickstofftemperatur: Widerstand des Cu-Drahtes}
-	\label{fig:Widerstand_Stick}
+	\input{Widerstand.tex}
+	\caption{Widerstand des Cu-Drahtes}
+	\label{fig:Widerstand}
 \end{figure}
 
 \subsection{Leistung}
+Die Heizleistung kann man mit der Folgenden Formel und ihrer Fehlerformel berechnet werden:
 \begin{align}
-	P&=UI\\
-	\sigma_P&=I\cdot\sigma_U
+	P&=UI\,,\\
+	\sigma_P&=I\cdot\sigma_U\,.
 \end{align}
+Es wird der gleiche Fehler $\sigma_U$ wie zuvor auch verwendet.
+Nun kann die elektrische Leistung während des Heizvorgangs gegen die Temperatur aufgetragen werden (vgl. Abb.\ref{fig:Leistung}).
 \begin{figure}[!htb]
 	\centering
-	\input{Leistung_Raum.tex}
-	\caption{Raumtemperatur: beim Heizen hineingesteckte Leistung}
-	\label{fig:Leistung_Raum}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\input{Leistung_Stick.tex}
-	\caption{Stickstofftemperatur: beim Heizen hineingesteckte Leistung}
-	\label{fig:Leistung_Stick}
+	\input{Leistung.tex}
+	\caption{Beim Heizen hineingesteckte Leistung}
+	\label{fig:Leistung}
 \end{figure}
 
 \subsection{molare Wärmekapazität}
@@ -270,13 +265,15 @@ Für das Abkühlen kann man einen exponentiellen Abfall der Temperatur mit der Z
 Zudem wird sich die Temperatur dem thermischen Gleichgewicht angleichen: $T(t)=T_0+(T_1-T_0)\cdot e^{-\lambda t}$.
 Somit ist $\frac{\dif T}{\dif t}|_\text{abk}=-\lambda\cdot (T-T_0)$.
 Dabei ist $T_0$ die Temperatur des thermischen Gleichgewichtes.
-Setzt man dies in \eqref{eq:molWaerme} ein, ergibt sich
+Setzt man dies für die molare Wärmekapazität nach \eqref{eq:molWaerme} ein, ergibt sich
 \begin{align}
 	c_m&=\frac{M}{m}\frac{P}{a+\lambda (T-T_0)}
 	\label{eq:c_m}\\
 	\sigma{c_m}&=\frac{M}{m}\sqrt{\frac{\sigma_P^2}{(a+\lambda (T-T_0))^2}+\frac{P^2}{(a+\lambda (T-T_0))^4}\cdot (\sigma_a^2+(T-T_0)^2 \sigma_\lambda^2+\lambda^2\sigma_T^2)}\,.
 	\label{eq:sigma_c_m}
 \end{align}
+Die molare Masse von Aluminium beträgt $M=26.982\,\si{\gram\per\mol}$, von Beryllium $M=9.012\,\si{\gram\per\mol}$.
+Die Masse des Aluminium-Körpers ist $m=52.5\,\si\gram$, die des Beryllium-Körpers ist $m=43.0\,\si\gram$.\\
 Um die Temperatur $T_0$ zu ermitteln, werden die Werte vor dem Erhitzen verwendet.
 Diese waren bei Zimmertemperatur erwartungsgemäß konstant.
 Somit liegt die Zimmertemperatur bei $T_0(0.88\,\text{mV})=18\si{\celsius}$.

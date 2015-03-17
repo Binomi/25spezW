@@ -37,3 +37,26 @@ p 'stickstoffAlHeizen.dat' u (T($2)):($3/0.5):(0.4/0.5) w e t'Aluminium',\
 set output
 !epstopdf Widerstand_Stick.eps
 !rm Widerstand_Stick.eps
+
+#====================================================================
+
+reset
+set terminal epslatex color
+set output 'Widerstand.tex'
+set xlabel 'Temperatur $T$ [$^\circ C$]'
+set ylabel 'Widerstand $R$  [$\Omega$]'
+set key top left
+
+T(x)=0.219+20.456*x-0.302*x**2+0.009*x**3
+U(x)=20.456-2*0.302*x+3*0.009*x**2
+V=0.02#mV Unsicherheit
+
+p 'heizenAl.dat' u (T($2)):(3*(10.5+0.25*$0)/0.5):(1.2/0.5) w e t'Aluminium',\
+  'heizenBe.dat' u (T($2)):(3*$3/0.5):(1.2/0.5) w e t'Beryllium',\
+  'stickstoffAlHeizen.dat' u (T($2)):($3/0.5):(0.4/0.5) w e pt 1 lt 1 notitle,\
+  'stickstoffBeHeizen.dat' u (T($2)+T(0.88)):($3/0.5):($4/0.5) w e pt 2 lt 2 notitle,\
+  
+
+set output
+!epstopdf Widerstand.eps
+!rm Widerstand.eps
