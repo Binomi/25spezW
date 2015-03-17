@@ -300,7 +300,7 @@ Die Werte für $a$ und $\lambda$ der 4 Versuchsreihen befinden sich in Tabelle \
 \end{table}
 Mit diesen und Formel \eqref{eq:c_m} sowie \eqref{eq:sigma_c_m} kann man nun die molare Wärme berechnen und gegen die Temperatur auftragen (vgl. Abb.\ref{fig:molWaerme}).
 Nach Dulong-Petit sollte sich der konstante Wert $3R$ ergeben, nach dem Debye-Modell erwartet man einen Verlauf nach \eqref{eq:debye}.
-Dabei liegt die Debye-Temperatur nach \cite[S.226]{prakti} für Aluminium bei $\theta_D=428\,\si\kelvin$, für Beryllium bei $\theta_D=1440\,\si\kelvin$. 
+Dabei liegt die Debye-Temperatur nach \cite[S.226]{prakti} für Aluminium bei $\theta_D=428\,\si\kelvin$, für Beryllium bei $\theta_D=1440\,\si\kelvin$.
 
 \begin{figure}[!htb]
 	\centering
@@ -309,12 +309,31 @@ Dabei liegt die Debye-Temperatur nach \cite[S.226]{prakti} für Aluminium bei $\
 	\label{fig:molWaerme}
 \end{figure}
 
-
-
 \section{Diskussion}
 \label{sec:diskussion}
+\subsection{Temperaturverläufe}
+Beim Heizen bei Zimmertemperatur (Abb.\ref{fig:Raumtemp})fällt auf, dass die beiden Körper relativ schnell die Maximaltemperatur von $80\si\celsius$ erreichen.
+Damit man mehr Messwerte erhält, hätte man in kleineren Zeitintervallen messen müssen oder bei einer kleineren Stromstärke heizen sollen.
+Die wenigen Messwerte beeinflussen die Bestimmung der molaren Wärmekapazität eventuell negativ.
 
-\section{Anhang}
+An den Temperaturverläufen, die bei Stickstoffkühlung aufgenommen wurden, also Abb.\ref{fig:Stickstofftemp}, kann man erkennen, dass vor Anfang der Messung noch nicht die Siedetemperatur von Stickstoff $-196\si\celsius\corresponds 77.15\,\si\kelvin$ erreicht wurde.
+Das thermische Gleichgewicht ist auch nicht erreicht worden.
+Um bessere Messwerte zu erhalten, hätte man also noch länger warten müssen oder mehr Stickstoff verwenden müssen.
+Der Knick während des Erwärmens von Beryllium in Abb.\ref{fig:Stickstofftemp} lässt sich damit erklären, dass die Heizspannung danach mit dem Schalter verdreifacht wurde und so erstmal kleiner gedreht werden musste.
+
+Bei Beryllium hätte man länger den Abkühlvorgang beobachten müssen, um den erwarteten exponentiellen Abfall an die Gleichgewichtstemperatur zu beobachten.
+Die Messwerte sehen nämlich ziemlich linear aus.
+
+\subsection{Widerstand und Leistung}
+Bei den Widerstandswerten aus Abb.\ref{fig:Widerstand} erkennt man, dass sie bei dem Aufbau für Aluminium stets geringer sind als bei dem für Beryllium.
+Dies lässt sich damit erklären, dass der verwendete Kupferdraht bei Beryllium länger oder dünner ist.
+Dies erhöht den Widerstand.
+Außerdem ist der Widerstand stark temperaturabhängig.
+Interpoliert man den Widerstand bei noch niedrigeren Temperaturen, müsste man einen Punkt erreichen, an dem der Draht keinen Widerstand hat.
+Dies zu untersuchen wäre auch interessant gewesen, man hätte dazu aber nicht mehr Stickstoff als Kühlung nehmen können.
+
+
+\subsection{molare Wärmekapazität}
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
