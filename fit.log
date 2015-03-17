@@ -2631,3 +2631,355 @@ correlation matrix of the fit parameters:
                 o      p      
 o               1.000 
 p              -0.781  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'heizenAl.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 7
+function used for fitting: A(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 5.02687e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.204258
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.75566
+rel. change during last iteration : -1.22441e-10
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.866678
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.751131
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 302.878          +/- 2.091        (0.6903%)
+b               = 295510           +/- 230.9        (0.07814%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -0.840  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'heizenBe.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 11
+function used for fitting: C(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.69847e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.333725
+
+initial set of free parameter values
+
+c               = 1
+d               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 7.3997
+rel. change during last iteration : -2.46221e-09
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.906747
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.822189
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+c               = 188.466          +/- 1.108        (0.5877%)
+d               = 291623           +/- 200.6        (0.06879%)
+
+
+correlation matrix of the fit parameters:
+
+               c      d      
+c               1.000 
+d              -0.852  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'kuehlenAl.dat' u ($1*60):(log(T($2)-T0)*10**5):(U($2)*V/(T($2)-T0)*10**5)
+        format = x:z:s
+        #datapoints = 20
+function used for fitting: E(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.26725e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.264329
+
+initial set of free parameter values
+
+e               = 1
+f               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 5.2099
+rel. change during last iteration : -2.34728e-08
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.537995
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.289439
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+e               = -87.7609         +/- 0.5927       (0.6754%)
+f               = 406428           +/- 184          (0.04527%)
+
+
+correlation matrix of the fit parameters:
+
+               e      f      
+e               1.000 
+f              -0.840  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'kuehlenBe.dat' u ($1*60):(log(T($2)-T0)*10**5):(U($2)*V/(T($2)+T_alt(0.88)-T0)*10**5)
+        format = x:z:s
+        #datapoints = 21
+function used for fitting: G(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.11258e+07       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.428346
+
+initial set of free parameter values
+
+g               = 1
+h               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 11.7751
+rel. change during last iteration : -3.0283e-08
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.787238
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.619743
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+g               = -51.2942         +/- 0.5133       (1.001%)
+h               = 407794           +/- 168.1        (0.04123%)
+
+
+correlation matrix of the fit parameters:
+
+               g      h      
+g               1.000 
+h              -0.833  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'stickstoffAlHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 31
+function used for fitting: I(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 2.83884e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.770321
+
+initial set of free parameter values
+
+i               = 1
+j               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 13.072
+rel. change during last iteration : -1.56383e-07
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.671384
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.450757
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+i               = 74.846           +/- 0.2219       (0.2965%)
+j               = 113617           +/- 119.3        (0.105%)
+
+
+correlation matrix of the fit parameters:
+
+               i      j      
+i               1.000 
+j              -0.867  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'stickstoffBeHeizen.dat' u ($1*60):(T($2)*1000):(U($2)*V*1000)
+        format = x:z:s
+        #datapoints = 31
+function used for fitting: K(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 3.07811e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.781929
+
+initial set of free parameter values
+
+k               = 1
+l               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2557.18
+rel. change during last iteration : -7.91167e-10
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.39034
+variance of residuals (reduced chisquare) = WSSR/ndf   : 88.1786
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+k               = 108.78           +/- 3.11         (2.859%)
+l               = 100976           +/- 1689         (1.672%)
+
+
+correlation matrix of the fit parameters:
+
+               k      l      
+k               1.000 
+l              -0.872  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'stickstoffAlKuehlen.dat' u ($1*30):(log(T($2)-T1)*10**5):(U($2)*V/(T($2)-T1)*10**5)
+        format = x:z:s
+        #datapoints = 20
+function used for fitting: M(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 2.78722e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.182207
+
+initial set of free parameter values
+
+m               = 1
+n               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.06557
+rel. change during last iteration : -1.03051e-08
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.243307
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0591983
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -158.835         +/- 0.3626       (0.2283%)
+n               = 425874           +/- 97.99        (0.02301%)
+
+
+correlation matrix of the fit parameters:
+
+               m      n      
+m               1.000 
+n              -0.813  1.000 
+
+
+*******************************************************************************
+Wed Mar 18 00:52:36 2015
+
+
+FIT:    data read from 'stickstoffBeKuehlen.dat' u ($1*60):(log(T($2)+T_alt(0.88)-T2)*10**5):(U($2)*V/(T($2)+T_alt(0.88)-T1)*10**5)
+        format = x:z:s
+        #datapoints = 21
+function used for fitting: O(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 9.36534e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.280699
+
+initial set of free parameter values
+
+o               = 1
+p               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 105.577
+rel. change during last iteration : -9.79937e-11
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.35726
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.55667
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+o               = -131.086         +/- 2.074        (1.582%)
+p               = 466991           +/- 543.2        (0.1163%)
+
+
+correlation matrix of the fit parameters:
+
+               o      p      
+o               1.000 
+p              -0.781  1.000 
