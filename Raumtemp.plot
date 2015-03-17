@@ -2,10 +2,10 @@ reset
 set terminal epslatex color
 set output 'Raumtemp.tex'
 set xlabel 'Zeit $t$ [min]'
-set ylabel 'Temperatur $T$ [$\si{\celsius}$]'
+set ylabel 'Temperatur $T$ [$\si\kelvin$]'
 set key top right
 
-T(x)=0.219+20.456*x-0.302*x**2+0.009*x**3
+T(x)=0.219+20.456*x-0.302*x**2+0.009*x**3+273.15
 U(x)=20.456-2*0.302*x+3*0.009*x**2
 V=0.02#mV Unsicherheit
 
