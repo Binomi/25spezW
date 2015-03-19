@@ -183,8 +183,31 @@ Ein Versuch um Materialien zu charakterisieren wurde hier durchgeführt.
 
 \section{Theorie}
 \label{sec:theorie}
+Die spezifische Wärmespeicherkapazität $c$ von Festkörpern ist definiert als
+\begin{align}
+	c=\frac{1}{M}\cdot \frac{\partial U}{\partial T} \quad .
+\end{align}
+Hierbei ist $M$ die Masse des erwärmten Gegenstandes und $U$ die Wärme, welche ihm hinzugefügt werden muss um  die Temperatur $T$ zu erhöhen.
+Im Gegensatz zu der spezifischen Wärme bei Gasen wird hier nicht unterschieden, ob die Erwärmung bei konstantem Druck (isobar) oder konstantem Volumen (isochor) erfolgt, da Festkörper eine sehr viel geringere Kompressibilität aufweisen und daher die Effekte nicht so groß sind.
+Dafür spielen bei Gasen quantenmechanische Eigenschaften der Teilchen keine Rolle, weil diese so große Abstände zueinander besitzen, dass diese zu vernachlässigen sind.
+In Festkörpern sind die Atome und Moleküle jedoch wesentlich dichter, so dass dies nicht unerheblich ist.
+
+\subsection{Dulong-Petit-Regel}
+Wie im Versuch \textsc{Adiabatenexponent} erläutert, trägt jeder der $f$ Freiheitsgrade jedes der $N$ Atome die Energie $\frac{2}{2}k_BT$.
+Die Gesamtenergie $U$ beträgt also
+\begin{align*}
+	U=N\frac{f}{2}k_BT=M\frac{f}{2}RT
+\end{align*}
+woraus für die spezifische Wärmespeicherkapazität gilt
+\begin{align}
+	c=\frac{f}{2}R \label{eq:f2R}\quad .
+\end{align}
+
+In Festkörpern können definitionsgemäß keine Translationen und Rotationen statfinden, da die Stoffe fixiert sind.
+
 
 \subsection{Debye-Modell}
+
 \begin{align}
 	c_m=9R \left(\frac{T}{\theta_D}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x
 	\label{eq:debye}
