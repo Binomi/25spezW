@@ -193,7 +193,7 @@ Dafür spielen bei Gasen quantenmechanische Eigenschaften der Teilchen keine Rol
 In Festkörpern sind die Atome und Moleküle jedoch wesentlich dichter, so dass dies nicht unerheblich ist.
 
 \subsection{Dulong-Petit-Regel}
-Wie im Versuch \textsc{Adiabatenexponent} erläutert, trägt jeder der $f$ Freiheitsgrade jedes der $N$ Atome die Energie $\frac{2}{2}k_BT$.
+Wie im Versuch \textit{Adiabatenexponent} erläutert, trägt jeder der $f$ Freiheitsgrade jedes der $N$ Atome die Energie $\frac{2}{2}k_BT$.
 Die Gesamtenergie $U$ beträgt also
 \begin{align*}
 	U=N\frac{f}{2}k_BT=M\frac{f}{2}RT
@@ -203,10 +203,13 @@ woraus für die spezifische Wärmespeicherkapazität gilt
 	c=\frac{f}{2}R \label{eq:f2R}\quad .
 \end{align}
 
-In Festkörpern können definitionsgemäß keine Translationen und Rotationen statfinden, da die Stoffe fixiert sind.
-
+In Festkörpern können definitionsgemäß keine Translationen statfinden, da die Bestandteile fixiert sind.
+Es können also nur Rotationen und Schwingungen in jeweils drei Raumrichtungen stattfinden, das heißt, dass es insgesamt $F=6$ Freiheitsgrade gibt.
+Dies ist jedoch nur für genügend hohe Temperaturen gültig, da hier die Quantisierung der Energie zu vernachlässigen ist.
+Ab einer als \textsc{Einstein}-Temperatur $\theta_E=\frac{\hbar \omega}{k_B}$ bezeichneten Temperatur, die gerade noch ausreicht, um eine Schwingung $\omega$ anzuregen, kann diese Näherung verwendet werden (\cite[S. 879]{gerthsen}).
 
 \subsection{Debye-Modell}
+Befindet sich die Temperatur unterhalb der Einstein-Temperatur, so muss die Quantelung der Energien mit einberechnet werden.
 
 \begin{align}
 	c_m=9R \left(\frac{T}{\theta_D}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x
@@ -221,6 +224,23 @@ In Festkörpern können definitionsgemäß keine Translationen und Rotationen st
 
 \section{Durchführung}
 \label{sec:durchfuehrung}
+In diesem Versuch soll von zwei verschiedenen Körpern der Temperaturverlauf bei der Erwärmung gemessen werden.
+Dazu werden zwei Kalorimeter verwendet, welche aus einem Probekörper mit Heizdraht bestehen.
+Zuerst werden von den zwei Kalorimetern aus Abb. \ref{fig:aufbau} die Werte der Temperatur bei Raumtemperatur gemessen.
+Dies wird je 5 min lang gemacht alle 30 Sekunden.
+
+Anschließend werden die Probekörper mit einem Heizstrom von $0.5\si\volt$ über 15 min erwärmt und dabei ebenfalls alle 30 min die Temperatur aber auch die Spannung, welche benötigt wird um den Strom aufrecht zu erhalten, aufgezeichnet.
+Die Spannung muss ständig nachreguliert werden.
+Folgend wird über weitere 10 min der Abkühlvorgang protokolliert.
+
+Ist dies beendet, so wird das Isolationsgefäß von dem Tutor mit flüssigem Stickstoff soweit befüllt, dass das Kupfergefäß noch sicher stehen kann.
+Die Probekörper werden in die Kupfergefäße gehängt und diese werden so hoch gestellt, dass sie verschlossen werden.
+Nun muss solange gewartet werden, bis sich die Temperatur  nicht mehr wesentlich ändert.
+Da dies sehr lange dauert, ist zu empfehlen, erst einen Körper zu erheizen und während man diese Messung bei dem Zweiten durchführt schon den ersten herabzukühlen.
+Der Probekörper darf jedoch nicht in den Stickstoff gelangen.\newline
+
+Achtung! In diesem Versuch wird mit flüssigem Stickstoff hantiert.
+Bei Berührungen mit der Haut kann es zu schweren Verbrennungen kommen.
 
 \section{Auswertung}
 \label{sec:auswertung}
