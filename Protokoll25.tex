@@ -204,17 +204,26 @@ woraus für die spezifische Wärmespeicherkapazität gilt
 \end{align}
 
 In Festkörpern können definitionsgemäß keine Translationen statfinden, da die Bestandteile fixiert sind.
-Es können also nur Rotationen und Schwingungen in jeweils drei Raumrichtungen stattfinden, das heißt, dass es insgesamt $F=6$ Freiheitsgrade gibt.
+Es können also nur Rotationen und Schwingungen in jeweils drei Raumrichtungen stattfinden, das heißt, dass es insgesamt $f=6$ Freiheitsgrade gibt.
 Dies ist jedoch nur für genügend hohe Temperaturen gültig, da hier die Quantisierung der Energie zu vernachlässigen ist.
 Ab einer als \textsc{Einstein}-Temperatur $\theta_E=\frac{\hbar \omega}{k_B}$ bezeichneten Temperatur, die gerade noch ausreicht, um eine Schwingung $\omega$ anzuregen, kann diese Näherung verwendet werden (\cite[S. 879]{gerthsen}).
 
 \subsection{Debye-Modell}
 Befindet sich die Temperatur unterhalb der Einstein-Temperatur, so muss die Quantelung der Energien mit einberechnet werden.
 
+Debye erweiterte Einsteins Theorie und nahm an, dass auch das Gitter als ganzes schwingen kann.
+Dies erfordert mehr Energie, so dass in diesen Schwingungen die meiste Energie gespeichert ist.
+Durch die sinkende Temperatur können immer weniger Moden anspringen und so tritt die Quantelung immer stärker in den Vordergrund.
+Die Länge des Festkörpers muss ein Vielfaches der halben Wellenlänge sein.
+
+Nach \cite[S. 444]{demtroeder3} gilt für die spezifische molare Wärme
+
 \begin{align}
-	c_m=9R \left(\frac{T}{\theta_D}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x
+	c_m=9R \left(\frac{T}{\theta_E}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x\quad .
 	\label{eq:debye}
 \end{align}
+
+Dabei ist 
 
 \subsection{Wärmekapazität}
 \begin{align}
