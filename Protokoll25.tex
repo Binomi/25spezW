@@ -219,20 +219,30 @@ Die Länge des Festkörpers muss ein Vielfaches der halben Wellenlänge sein.
 Nach \cite[S. 444]{demtroeder3} gilt für die spezifische molare Wärme
 
 \begin{align}
-	c_m=9R \left(\frac{T}{\theta_E}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x\quad .
-	\label{eq:debye}
+	c_m=9R \left(\frac{T}{\theta_E}\right)^3\cdot\int\limits_0^\frac{\theta_D}{T} \frac{x^4 e^x}{(e^x-1)^2} \,\dif x\quad .	\label{eq:debye}
 \end{align}
 
-Dabei ist 
 
 \subsection{Wärmekapazität}
+Die Wärmekapazität eines Festkörpers ergibt sich aus der Gleichung
 \begin{align}
-	c_M=\frac{M}{m}\cdot\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}
-	\label{eq:molWaerme}
+	c_M=\frac{m}{M}\cdot \frac{\partial U}{\partial T}=\frac{m}{M}\cdot \frac{\partial P}{\partial \frac{dT}{dt}}
+\end{align}
+mit $\frac{dU}{dt}=P$. Es ergibt sich durch die Mittelung über Erwärmen und Abkülen:
+\begin{align}
+	c_M=\frac{M}{m}\cdot\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}\label{eq:molWaerme}
 \end{align}
 
 \section{Durchführung}
 \label{sec:durchfuehrung}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Aufbau}
+	\caption{Aufbau nach \cite[23.4.15, 13 Uhr]{lp25}}
+	\label{fig:aufbau}
+\end{figure}
+
 In diesem Versuch soll von zwei verschiedenen Körpern der Temperaturverlauf bei der Erwärmung gemessen werden.
 Dazu werden zwei Kalorimeter verwendet, welche aus einem Probekörper mit Heizdraht bestehen.
 Zuerst werden von den zwei Kalorimetern aus Abb. \ref{fig:aufbau} die Werte der Temperatur bei Raumtemperatur gemessen.
