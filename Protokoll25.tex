@@ -224,13 +224,21 @@ Nach \cite[S. 444]{demtroeder3} gilt für die spezifische molare Wärme
 
 
 \subsection{Wärmekapazität}
-Die Wärmekapazität eines Festkörpers ergibt sich aus der Gleichung
+Es gilt 
 \begin{align}
-	c_M=\frac{m}{M}\cdot \frac{\partial U}{\partial T}=\frac{m}{M}\cdot \frac{\partial P}{\partial \frac{dT}{dt}}
+	P_\text{el}=\frac{dW}{dt}=\frac{dU}{dt}-\frac{dQ}{dt}\label{eq:Pel}
 \end{align}
-mit $\frac{dU}{dt}=P$. Es ergibt sich durch die Mittelung über Erwärmen und Abkülen:
+Außerdem gilt
+\begin{align*}
+	c=\frac{dU}{dT}\quad\Rightarrow\quad \frac{dU}{dt}=c\frac{dT}{dt}
+\end{align*}
+wobei beim Erwärmen nach Gleichung \eqref{eq:Pel} noch die elektrische Heizleistung mit einfließt:
 \begin{align}
-	c_M=\frac{M}{m}\cdot\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}+\frac{\dif T}{\dif t}|_\text{abk}}\label{eq:molWaerme}
+	\frac{dQ}{dt}=c\frac{dT}{dt}-P_\text{el}
+\end{align}<++>
+Es ergibt sich durch Umformen und Gleichsetzen und dem Umrechenfaktor auf die molare Wärmekapazität $\frac{M}{m}$:
+\begin{align}
+	c_M=\frac{M}{m}\cdot\frac{P}{\frac{\dif T}{\dif t}|_\text{erw}-\frac{\dif T}{\dif t}|_\text{abk}}\label{eq:molWaerme}\quad .
 \end{align}
 
 \section{Durchführung}
